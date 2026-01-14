@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Anti For You",
+  "version": "1.0",
+  "description": "Removes 'For You' sections from commonly used websites",
+  "permissions": ["storage"],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "action": {
+    "default_title": "Anti For You Settings"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*", "*://youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

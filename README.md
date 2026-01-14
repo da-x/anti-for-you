@@ -1,3 +1,5 @@
+<img src="logo-initial.svg" />
+
 # Anti For You
 
 A Chrome extension that removes algorithmically-driven "For You" sections and distracting navigation elements from popular websites.
